@@ -1,14 +1,14 @@
 def maximizar_troca_de_figurinhas(figurinhas_da_maria, figurinhas_do_joao):
   
     contro = 0
-    quant = 0
+    quanti = 0
 
     if len(figurinhas_da_maria) < len(figurinhas_do_joao):  
         for i in range(len(figurinhas_da_maria)):
             for j in range(len(figurinhas_do_joao)):
                 if figurinhas_da_maria[i] == figurinhas_do_joao[j]:
                     control += 1
-        quant = len(figurinhas_da_maria) - control
+        quanti = len(figurinhas_da_maria) - control
 
 
     elif len(figurinhas_do_joao) < len(figurinhas_da_maria):
@@ -16,7 +16,7 @@ def maximizar_troca_de_figurinhas(figurinhas_da_maria, figurinhas_do_joao):
             for j in range(len(figurinhas_da_maria)):
                 if figurinhas_do_joao[i] == figurinhas_da_maria[j]:
                     control += 1
-        quant = len(figurinhas_do_joao) - control
+        quanti = len(figurinhas_do_joao) - control
 
                                                               
     else:
@@ -24,6 +24,6 @@ def maximizar_troca_de_figurinhas(figurinhas_da_maria, figurinhas_do_joao):
             for j in range(len(figurinhas_do_joao)):
                 if figurinhas_da_maria[i] == figurinhas_do_joao[j]:
                     control += 1
-        quant = len(figurinhas_da_maria) - control
+        quanti = len(figurinhas_da_maria) - control
 
-    return quant
+    return quanti
